@@ -73,7 +73,7 @@ client.on('message', async function (topic, message) {
                   },
           })
 
-          if(+data.humedad > 90){
+          if(+data.humedad > 60){
             client.publish('environment-data-micro', 'something')
           }
 
